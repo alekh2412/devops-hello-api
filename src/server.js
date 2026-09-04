@@ -15,6 +15,11 @@ app.get("/health", (req, res) => {
     status: "ok",
   });
 });
+app.get("/version", (req, res) => {
+  res.json({
+    version: "1.0.0",
+  });
+});
 
 if (require.main === module) {
   app.listen(PORT, () => {
