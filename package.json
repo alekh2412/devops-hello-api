@@ -1,0 +1,22 @@
+{
+  "name": "devops-hello-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alekh2412/devops-hello-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alekh2412/devops-hello-api/issues"
+  },
+  "homepage": "https://github.com/alekh2412/devops-hello-api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
