@@ -45,3 +45,14 @@ jobs:
 
       - name: Build application
         run: npm run build
+
+  docker:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t devops-hello-api .
